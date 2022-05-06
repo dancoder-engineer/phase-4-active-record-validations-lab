@@ -1,0 +1,23 @@
+
+An error occurred while loading ./spec/models/post_spec.rb.
+Failure/Error:
+  RSpec.describe Post, type: :model do
+  
+    it 'can be created with valid data' do
+      post = Post.new(
+        title: "You Won't Believe These True Facts",
+        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, nulla vel condimentum ornare, arcu lorem hendrerit purus, ac sagittis ipsum nisl nec erat. Morbi porta sollicitudin leo, eu cursus libero posuere ac. Sed ac ultricies ante. Donec nec nulla ipsum. Nunc eleifend, ligula ut volutpat.',
+        summary: 'Abstract.',
+        category: 'Fiction'
+      )
+      expect(post).to be_valid
+
+SyntaxError:
+  /home/dan/Development/code/mod4/phase-4-active-record-validations-lab/app/models/post.rb:12: syntax error, unexpected end-of-input, expecting `end'
+# /usr/share/rvm/gems/ruby-2.7.4/gems/zeitwerk-2.4.2/lib/zeitwerk/kernel.rb:26:in `require'
+# /usr/share/rvm/gems/ruby-2.7.4/gems/zeitwerk-2.4.2/lib/zeitwerk/kernel.rb:26:in `require'
+# ./spec/models/post_spec.rb:3:in `<top (required)>'
+
+Finished in 0.00006 seconds (files took 0.67541 seconds to load)
+0 examples, 0 failures, 1 error occurred outside of examples
+
